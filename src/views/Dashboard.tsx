@@ -1,14 +1,12 @@
 import React, { Fragment } from "react";
 
-import Task from "../components/Task"
+import { TaskManager } from "../components";
 
 class Dashboard extends React.Component {
     render() {
         return (
             <Fragment>
-                <Task description="Do homework"/>
-                <Task description="Clean the house"/>
-                <Task description="Do dishes"/>
+                <TaskManager/>
             </Fragment>
         )
     }

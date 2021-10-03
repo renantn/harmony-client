@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import CSS from "csstype"
 
-interface TaskProps {
+export interface TaskProps {
     description: string;
 }
 
@@ -30,4 +30,4 @@ class Task extends React.Component <TaskProps> {
     }
 }
 
-export default Task
+export default Task;
