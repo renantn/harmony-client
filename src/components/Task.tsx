@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import CSS from "csstype"
 
 interface TaskProps {
-    description: string,
+    description: string;
 }
 
-class Task extends React.Component {
+class Task extends React.Component <TaskProps> {
     taskStyle: CSS.Properties;
 
     constructor(props: TaskProps) {
@@ -19,7 +19,7 @@ class Task extends React.Component {
         return (
             <Fragment>
                 <article style={this.taskStyle}>
-                    <header> Do homework </header>
+                    <header> { this.props.description } </header>
                     <aside>
                         <button>Done</button>
                         <button>Remove</button>
